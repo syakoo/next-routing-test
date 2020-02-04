@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { useRouter, withRouter } from 'next/router'
 
 // =====================================
 // §3．asを忘れてはいけない．
@@ -8,7 +7,7 @@ const Chapter3 = () => {
 
   return (
     <div>
-      <h1>§3．動的ルーティングは[name].jsシンタックスを使え．</h1>
+      <h1>§3．asを忘れてはいけない．</h1>
       <div>
         <h2>✖asなし</h2>
         <Ex1 />
@@ -27,7 +26,7 @@ Chapter3.getInitialProps = async () => {
 }
 
 // =====================================
-// 方法１．hrefにqueryを追加する方法．
+// 方法１．asを消してみた．
 const Ex1 = () => {
   return (
     <ul>
@@ -45,7 +44,7 @@ const Ex1 = () => {
   )
 }
 // =====================================
-// 方法２．[name].jsシンタックスを使用．
+// 方法２．asを残した．
 const Ex2 = () => {
   return (
     <ul>
